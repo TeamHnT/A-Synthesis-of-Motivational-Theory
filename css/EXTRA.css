@@ -1,0 +1,333 @@
+/*Layout*/
+
+.static{
+  position: static;
+}
+
+.relative{
+  position: relative;
+}
+
+
+/* Header */
+video{
+  width: 100%;
+}
+
+/*Typography*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+ul,
+li,
+a{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0!important;
+}
+
+b{
+  font-weight: 800;
+}
+
+a{
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover{
+  color: pink;
+}
+
+.no-line-height{
+  margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+h1, h1 span{
+  font-size: 26px !important;
+  line-height: 1.5em;
+}
+
+.hmTheory img,
+.xyTheory img,
+.tfTheory img,
+.sdTheory img{
+  margin-bottom: 40px;
+}
+
+.ref{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+.ref:before{
+  position: absolute;
+  content: '';
+  height: 5px;
+  top: 0;
+  width: calc(100% - 16.6667%);
+  background: black;
+}
+
+.ref:after{
+  position: absolute;
+  content: '';
+  height: 5px;
+  bottom: 0;
+  left: 20px;
+  width: calc(100% - 16.6667%);
+  background: black;
+}
+
+.white:before{
+  background-color: White;
+}
+
+.white:after{
+  background-color: White;
+}
+
+.quote{
+  font-style: italic;;
+  font-weight: 400i;
+  margin: 15px 0;
+}
+
+.bibliography h1:before {
+  height: 0 !important;
+}
+
+.bibliography h1:after{
+  position: absolute;
+  content: '';
+  height: 5px;
+  bottom: 5px;
+  left: calc(8.33334% + 20px);
+  width: calc(100% - (16.6667% + 40px));
+  background: black;
+}
+
+h3:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  background: black;
+}
+
+.bibliography ul{
+  margin-top: 20px;
+}
+
+.bibliography ul li{
+  font-size: 14px;
+  padding-left: 80px;
+  margin-bottom: 1em;
+}
+
+.bibliography ul li a{
+  font-size: 14px;
+}
+
+.bibliography ul li:before{
+  margin-left: -80px;
+  content: "";
+}
+
+/* Black & White */
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 12px !important;
+}
+
+.vidBG{
+  background-color: black;
+}
+
+.hmTheory,.tfTheory,.bibliography {
+  padding: 50px 0;
+  background-color: white;
+  color: black;
+}
+
+.xyTheory,.sdTheory {
+  padding: 50px 0;
+  background-color: black !important;
+  color: white !important;
+}
+
+.xyTheory,.sdTheory h2{
+  letter-spacing: 0.5pt;
+}
+
+.xyTheory,.sdTheory b{
+  letter-spacing: 0.5pt;
+}
+
+.xyTheory h1:before, .sdTheory h1:before{
+  background: white !important;
+}
+
+.xyTheory h1 span:after,.sdTheory h1 span:after{
+  background: white !important;
+}
+
+.xyTheory h1:after,.sdTheory h1:after{
+  background: white !important;
+}
+
+footer{
+  background-color: black;
+  padding: 50px 0;
+  color: white;
+}
+
+footer a{
+  color: white;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+
+  .mt50{margin-top: 50px;}
+
+  .mb15{margin-bottom:15px;}
+  .mb35{margin-bottom: 35px !important;}
+  .mb50{margin-bottom: 50px;}
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  span,
+  ul,
+  li,
+  a{
+    font-size: 25px;
+  }
+
+  h1{
+    font-size: 60px !important;
+    font-weight: 800;
+    line-height: 2em;
+  }
+
+  h2,
+  h3{
+    font-size: 25px;
+  }
+
+  h1 span{
+    text-transform: uppercase;
+    font-size: 60px !important;
+    font-weight: 800;
+    line-height: 2em;
+  }
+
+  h1:before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    top: 110px;
+    width: calc(100% - (16.6667% + 40px));
+    background: black;
+  }
+
+  h1:after{
+    position: absolute;
+    content: '';
+    height: 20px;
+    bottom: 0;
+    left: calc(8.333333% + 20px);
+    width: calc(100% - (16.6667% + 40px));
+    background: black;
+  }
+
+  h1 span:after{
+    position: absolute;
+    content: '';
+    height: 20px;
+    left: calc(8.4% + 20px);
+    bottom: 32%;
+    margin-top: -10px;
+    width: calc(100% - (16.6667% + 40px));
+    background: black;
+  }
+
+  .ref{
+    text-transform: uppercase;
+    bottom:17px;
+    position: absolute;
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .ref:before{
+    height: 0px;
+  }
+
+  .ref:after{
+    height: 0px;
+  }
+
+  .quote{
+    margin: 50px 0;
+    font-size: 25px;
+  }
+
+  .bibliography h1:after{
+    height: 20px;
+    bottom: 5px;
+    left: calc(8.33334% + 20px);
+    width: calc(100% - (16.6667% + 40px));
+    background: black;
+  }
+
+  h3:after{
+    height: 10px;
+    bottom: -20px;
+  }
+
+  .bibliography ul{
+    margin-top: 35px;
+  }
+
+  .bibliography ul li{
+    font-size: 18px;
+  }
+
+  .bibliography ul li a{
+    font-size: 18px;
+  }
+
+  .md-font{
+    font-size: 28px;
+  }
+
+}
